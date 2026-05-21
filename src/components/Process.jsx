@@ -11,53 +11,94 @@ function Process() {
       title: "Discover",
       des: "Researching your goals, audience, and brand direction.",
     },
+
     {
       src: plan,
       title: "Plan & Design",
       des: "Designing clean layouts and smooth user experiences.",
     },
+
     {
       src: dev,
       title: "Develop",
       des: "Building fast, scalable, and responsive websites.",
     },
+
     {
       src: deliver,
       title: "Deliver & Support",
       des: "Launching and maintaining high-performing websites.",
     },
   ];
+
   return (
-    <div className="mx-14">
-      <h2 className="uppercase lg:text-3xl text-2xl text-[#D4A017] mb-12 ml-1 font-thin">
-        process
-      </h2>
+    <section className="w-full py-20">
 
-      <div className="flex flex-col lg:flex-row lg:flex-wrap gap-6 ml-[6.5%]">
-        {data.map((el, i) => (
-          <div
-            key={i}
-            className="flex items-center justify-around border lg:justify-normal gap-[10%] border-[#D4A017] bg-[#ffffff05] rounded-3xl transition-all duration-300 hover:-translate-y-1 p-2 lg:p-4 w-[92%] lg:w-[45%] lg:mb-5 lg:ml-4"
-          >
-            <img
-              src={el.src}
-              alt={el.title}
-              className="w-[30%] lg:w-[40%] lg:ml-5"
-            />
+      <div className="w-[90%] mx-auto">
 
-            <div>
-              <h3 className="text-2xl md:text-3xl text-[#D4A017] ml-3 mb-2">
-                {el.title}
-              </h3>
+        {/* Heading */}
+        <h2 className="uppercase lg:text-3xl text-2xl text-[#D4A017] mb-12 ml-10 font-thin">
+          Process
+        </h2>
 
-              <p className="text-sm md:text-xl ml-3 w-52 opacity-90 text-gray-400">
-                {el.des}
-              </p>
+        {/* Cards */}
+        <div className="flex flex-col lg:flex-row lg:flex-wrap gap-6">
+
+          {data.map((el, i) => (
+            <div
+              key={i}
+              className="
+                w-full
+                lg:w-[48%]
+                border
+                border-[#d4a01730]
+                bg-[#ffffff05]
+                rounded-3xl
+                p-6
+                flex
+                items-center
+                gap-6
+                transition-all
+                duration-300
+                hover:-translate-y-1
+                hover:border-[#D4A017]
+              "
+            >
+
+              {/* Image */}
+              <img
+                src={el.src}
+                alt={el.title}
+                className="
+                  w-[90px]
+                  md:w-[120px]
+                  lg:w-[140px]
+                  object-contain
+                  flex-shrink-0
+                "
+              />
+
+              {/* Content */}
+              <div>
+
+                <h3 className="text-2xl lg:text-3xl text-white font-semibold mb-3">
+                  {el.title}
+                </h3>
+
+                <p className="text-gray-500 leading-relaxed">
+                  {el.des}
+                </p>
+
+              </div>
+
             </div>
-          </div>
-        ))}
+          ))}
+
+        </div>
+
       </div>
-    </div>
+
+    </section>
   );
 }
 

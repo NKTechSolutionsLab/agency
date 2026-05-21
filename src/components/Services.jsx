@@ -55,7 +55,7 @@ function Services() {
                 className="w-[80%] md:w-[60%] lg:w-[80%]"
               />{" "}
             </div>
-            <h3 className="text-3xl m-2 my-5 text-[#D4A017]">{el.title}</h3>
+            <h3 className="text-3xl m-2 text-[#D4A017]">{el.title}</h3>
             <p className="text-xl font-light m-2 mt-4 opacity-90 text-gray-400">
               {el.description}
             </p>
