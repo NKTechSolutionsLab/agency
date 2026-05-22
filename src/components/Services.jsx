@@ -1,8 +1,8 @@
 import React from "react";
-import web from "../img/webdesign_img.png";
-import ui from "../img/UI.png";
-import seo from "../img/seo.png";
-import maintain from "../img/maintain.png";
+import web from "../img/webdesign_img.webp";
+import ui from "../img/UI.webp";
+import seo from "../img/seo.webp";
+import maintain from "../img/maintain.webp";
 
 function Services() {
   const data = [

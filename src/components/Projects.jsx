@@ -1,8 +1,8 @@
 import React from "react";
-import brewty from "../img/brewtiful2.png";
-import fashion from "../img/fashion2.png";
-import shopex from "../img/shopping2.png";
-import coach from "../img/coach.png";
+import brewty from "../img/brewtiful2.webp";
+import fashion from "../img/fashion2.webp";
+import shopex from "../img/shopping2.webp";
+import coach from "../img/coach.webp";
 import { BsArrowRight } from "react-icons/bs";
 function Projects() {
   const details = [

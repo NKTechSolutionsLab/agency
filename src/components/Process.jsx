@@ -1,8 +1,8 @@
 import React from "react";
-import dis from "../img/discover.png";
-import plan from "../img/plan_design.png";
-import dev from "../img/develop.png";
-import deliver from "../img/deliver.png";
+import dis from "../img/discover.webp";
+import plan from "../img/plan_design.webp";
+import dev from "../img/develop.webp";
+import deliver from "../img/deliver.webp";
 
 function Process() {
   const data = [

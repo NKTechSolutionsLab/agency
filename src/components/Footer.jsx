@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../img/logo.png";
+import logo from "../img/logo.webp";
 
 import {
   FiInstagram,
@@ -13,12 +13,12 @@ function Footer() {
     <footer className="w-full pt-20 pb-10" id="footer">
       <div
         className="
-          w-[92%]
+          w-[95%]
           mx-auto
           border
           border-[#d4a01720]
           bg-[#ffffff03]
-          rounded-[32px]
+          rounded-[50px]
           px-5
           sm:px-6
           lg:px-16

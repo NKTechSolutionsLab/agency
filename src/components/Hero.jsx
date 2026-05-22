@@ -1,9 +1,9 @@
 import React from "react";
-import hero from "../img/hero_img.png";
+import hero from "../img/hero_img.webp";
 import { BsArrowRight } from "react-icons/bs";
 function Hero() {
   return (
-    <div className="m-5 lg:flex justify-between items-center gap-7 lg:mt-6">
+    <div className="m-5 lg:flex justify-between items-center gap-4 lg:mt-6">
       <div className="lg:w-[85%] lg:mx-10">
         <h1 className="text-[#D4A017] tracking-wide my-5 md:my-8 lg:text-2xl">
           YOUR INNOVATION PARTNER
