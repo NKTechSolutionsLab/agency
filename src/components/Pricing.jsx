@@ -90,7 +90,8 @@ function Pricing() {
               </div>
 
               {/* Button */}
-              <button
+              <a href="#contact">
+                <button
                 className="
                   border border-[#D4A017]
                   px-6
@@ -105,6 +106,9 @@ function Pricing() {
               >
                 Get Started
               </button>
+
+
+              </a>
             </div>
           ))}
         </div>

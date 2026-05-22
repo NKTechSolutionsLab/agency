@@ -15,8 +15,9 @@ function Hero() {
           Strategic web design and development built to represent who you are
           and grow what you do
         </p>
-        <button
-          className="
+        <a href="#contact">
+          <button
+            className="
             flex
             items-center
             justify-center
@@ -38,10 +39,11 @@ function Hero() {
             font-medium
             lg:my-8
         "
-        >
-          Let's Talk
-          <BsArrowRight className="text-base " />
-        </button>
+          >
+            Let's Talk
+            <BsArrowRight className="text-base " />
+          </button>
+        </a>
       </div>
       <div>
         <img

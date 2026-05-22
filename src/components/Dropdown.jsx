@@ -29,7 +29,6 @@ function Dropdown({ isOpen, setIsOpen }) {
               className="my-5 mx-3 lg:hidden cursor-pointer"
               onClick={() => {
                 setIsOpen(false);
-                
               }}
             />
           </div>
@@ -46,8 +45,9 @@ function Dropdown({ isOpen, setIsOpen }) {
             ))}
           </div>
           <div className="w-80 h-[1.2px] ml-8 bg-gray-800 rounded-xl "></div>
-          <button
-                    className="
+          <a href="#contact">
+            <button
+              className="
                       flex
                       items-center
                       justify-center
@@ -70,10 +70,11 @@ function Dropdown({ isOpen, setIsOpen }) {
                       lg:my-8
                       pl-5 pr-12 py-3  ml-20 my-5
                   "
-                  >
-                    Let's Talk
-                    <BsArrowRight className="text-base " />
-                  </button>
+            >
+              Let's Talk
+              <BsArrowRight className="text-base " />
+            </button>
+          </a>{" "}
         </>
       ) : (
         <></>

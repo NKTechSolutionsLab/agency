@@ -31,13 +31,14 @@ function Navbar() {
             Work
           </a>
           <a
-            href="#footer"
+            href="#contact"
             className="hover:text-[#D4A017] transition-all duration-300"
           >
             Contact
           </a>
         </div>
-        <button
+        <a href="#contact">
+          <button
           className="
   hidden lg:flex
   items-center
@@ -65,6 +66,8 @@ function Navbar() {
           Let's Talk
           <BsArrowRight className="text-base" />
         </button>
+
+        </a>
         <RxHamburgerMenu
           size={36}
           color="#D4A017"

@@ -15,7 +15,6 @@ function CTA() {
           text-center
         "
       >
-
         <h2 className="text-4xl lg:text-6xl leading-tight max-w-4xl mx-auto mb-8">
           Ready to Build a Website That Represents Your Brand?
         </h2>
@@ -25,8 +24,9 @@ function CTA() {
           performance, and meaningful user engagement.
         </p>
 
-        <button
-          className="
+        <a href="#contact">
+          <button
+            className="
             border border-[#D4A017]
             px-8
             py-4
@@ -38,10 +38,10 @@ function CTA() {
             transition-all
             duration-300
           "
-        >
-          Let’s Talk
-        </button>
-
+          >
+            Let’s Talk
+          </button>
+        </a>
       </div>
     </section>
   );
