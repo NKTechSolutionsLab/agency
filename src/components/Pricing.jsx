@@ -4,20 +4,17 @@ function Pricing() {
   const data = [
     {
       title: "Starter",
-      price: "$299",
+      price: "$549",
       desc: "Perfect for small businesses and personal brands.",
-      points: [
-        "1-3 Pages",
-        "Responsive Design",
-        "Modern UI",
-        "Basic SEO",
-      ],
+
+      points: ["1–3 Pages", "Responsive Design", "Modern UI", "Basic SEO"],
     },
 
     {
-      title: "Growth",
-      price: "$499",
+      title: "Standard",
+      price: "$999",
       desc: "Built for businesses looking to scale online.",
+
       points: [
         "Multi-Page Website",
         "SEO Optimization",
@@ -30,6 +27,7 @@ function Pricing() {
       title: "Custom",
       price: "Custom",
       desc: "Tailored solutions for advanced business needs.",
+
       points: [
         "Custom Features",
         "API Integrations",
@@ -40,22 +38,26 @@ function Pricing() {
   ];
 
   return (
-    <section className="w-full py-20">
+    <section className="w-full py-20" id="pricing">
       <div className="w-[90%] mx-auto">
-
         {/* Heading */}
-        <h2 className="uppercase text-2xl lg:text-4xl text-[#D4A017] mb-12 font-light tracking-wide">
-          Pricing
-        </h2>
+        <div className="mb-14">
+          <h2 className="uppercase text-2xl lg:text-4xl text-[#D4A017] mb-4 font-light tracking-wide">
+            Pricing
+          </h2>
+
+          <p className="text-gray-500 leading-relaxed max-w-2xl">
+            Final pricing depends on project scope and requirements.
+          </p>
+        </div>
 
         {/* Cards */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-
           {data.map((el, i) => (
             <div
               key={i}
               className="
-                border border-[#d4a01740]
+                border border-[#d4a01730]
                 bg-[#ffffff05]
                 rounded-3xl
                 p-8
@@ -65,30 +67,29 @@ function Pricing() {
                 hover:border-[#D4A017]
               "
             >
+              {/* Plan */}
+              <h3 className="text-3xl text-[#D4A017] mb-5">{el.title}</h3>
 
-              <h3 className="text-3xl text-[#D4A017] mb-4">
-                {el.title}
-              </h3>
+              {/* Price */}
+              <div className="mb-8">
+                <h2 className="text-5xl  font-light tracking-tight">
+                  {el.price}
+                </h2>
+              </div>
 
-              <h2 className="text-5xl mb-6">
-                {el.price}
-              </h2>
+              {/* Description */}
+              <p className="text-gray-500 mb-10 leading-relaxed">{el.desc}</p>
 
-              <p className="text-gray-400 mb-8 leading-relaxed">
-                {el.desc}
-              </p>
-
-              <div className="flex flex-col gap-4 mb-10">
+              {/* Deliverables */}
+              <div className="flex flex-col gap-4 mb-12">
                 {el.points.map((point, idx) => (
-                  <span
-                    key={idx}
-                    className="text-gray-300"
-                  >
+                  <span key={idx} className="text-gray-300">
                     • {point}
                   </span>
                 ))}
               </div>
 
+              {/* Button */}
               <button
                 className="
                   border border-[#D4A017]
@@ -104,10 +105,8 @@ function Pricing() {
               >
                 Get Started
               </button>
-
             </div>
           ))}
-
         </div>
       </div>
     </section>

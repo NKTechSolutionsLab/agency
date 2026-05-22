@@ -10,8 +10,7 @@ import {
 
 function Footer() {
   return (
-    <footer className="w-full pt-20 pb-10">
-
+    <footer className="w-full pt-20 pb-10" id="footer">
       <div
         className="
           w-[92%]
@@ -26,7 +25,6 @@ function Footer() {
           py-14
         "
       >
-
         {/* TOP */}
         <div
           className="
@@ -40,13 +38,10 @@ function Footer() {
             pb-14
           "
         >
-
           {/* LEFT */}
           <div className="w-full lg:max-w-[420px]">
-
             {/* Logo */}
             <div className="flex items-center gap-3 mb-6">
-
               <img
                 src={logo}
                 alt="logo"
@@ -63,7 +58,6 @@ function Footer() {
               >
                 NKtechsolutions
               </h2>
-
             </div>
 
             {/* Description */}
@@ -75,11 +69,9 @@ function Footer() {
                 sm:text-lg
               "
             >
-              Creating modern websites and digital experiences
-              focused on clean design, performance, and
-              meaningful user interaction.
+              Creating modern websites and digital experiences focused on clean
+              design, performance, and meaningful user interaction.
             </p>
-
           </div>
 
           {/* RIGHT */}
@@ -92,75 +84,59 @@ function Footer() {
               gap-12
             "
           >
-
             {/* Navigation */}
             <div>
-
-              <h3 className="text-[#D4A017] text-lg mb-5">
-                Navigation
-              </h3>
+              <h3 className="text-[#D4A017] text-lg mb-5">Navigation</h3>
 
               <div className="flex flex-col gap-4 text-gray-500">
+                
 
                 <a
-                  href="#"
-                  className="hover:text-white transition-all duration-300"
-                >
-                  Home
-                </a>
-
-                <a
-                  href="#"
+                  href="#services"
                   className="hover:text-white transition-all duration-300"
                 >
                   Services
                 </a>
 
                 <a
-                  href="#"
+                  href="#projects"
                   className="hover:text-white transition-all duration-300"
                 >
                   Projects
                 </a>
 
                 <a
-                  href="#"
+                  href="#process"
                   className="hover:text-white transition-all duration-300"
                 >
                   Process
                 </a>
-
+                <a
+                  href="#pricing"
+                  className="hover:text-white transition-all duration-300"
+                >
+                  Pricing
+                </a>
               </div>
-
             </div>
 
             {/* Services */}
             <div>
-
-              <h3 className="text-[#D4A017] text-lg mb-5">
-                Services
-              </h3>
+              <h3 className="text-[#D4A017] text-lg mb-5">Services</h3>
 
               <div className="flex flex-col gap-4 text-gray-500">
-
                 <p>Web Design</p>
                 <p>UI/UX Design</p>
                 <p>SEO Optimization</p>
                 <p>Website Support</p>
-
               </div>
-
             </div>
 
             {/* Contact */}
             <div>
-
-              <h3 className="text-[#D4A017] text-lg mb-5">
-                Contact
-              </h3>
+              <h3 className="text-[#D4A017] text-lg mb-5">Contact</h3>
 
               <div className="flex flex-col gap-4 text-gray-500">
-
                 <a
                   href="mailto:nktechsolutions824@gmail.com"
                   className="
@@ -188,13 +164,9 @@ function Footer() {
                 >
                   Instagram
                 </a>
-
               </div>
-
             </div>
-
           </div>
-
         </div>
 
         {/* BOTTOM */}
@@ -209,7 +181,6 @@ function Footer() {
             pt-10
           "
         >
-
           {/* Copyright */}
           <p
             className="
@@ -218,12 +189,12 @@ function Footer() {
               text-center
             "
           >
-             &copy; {new Date().getFullYear()} NKtechsolutions. All rights reserved.
+            &copy; {new Date().getFullYear()} NKtechsolutions. All rights
+            reserved.
           </p>
 
           {/* Socials */}
           <div className="flex items-center gap-4">
-
             <a
               href="https://www.instagram.com/nktechsolutions24/"
               target="_blank"
@@ -267,9 +238,6 @@ function Footer() {
             >
               <FiLinkedin size={18} />
             </a>
-
-            
-
           </div>
 
           {/* Back To Top */}
@@ -288,11 +256,8 @@ function Footer() {
             Back To Top
             <FiArrowUpRight />
           </a>
-
         </div>
-
       </div>
-
     </footer>
   );
 }

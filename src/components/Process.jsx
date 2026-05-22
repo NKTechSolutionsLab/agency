@@ -32,7 +32,7 @@ function Process() {
   ];
 
   return (
-    <section className="w-full py-20">
+    <section className="w-full py-20" id="process">
 
       <div className="w-[90%] mx-auto">
 

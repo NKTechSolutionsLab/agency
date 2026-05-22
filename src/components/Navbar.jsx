@@ -13,7 +13,7 @@ function Navbar() {
       <div className="flex item-center justify-between m-1 ">
         <div className="flex">
           <img src={logo} className="w-20 lg:w-24" alt="LOGO" />
-          <h1 className="my-5 font-poppins font-semibold text-[25px] lg:text-[30px] md:text-3xl">
+          <h1 className="my-5 font-poppins font-semibold text-[25px] lg:text-[30px] md:text-3xl lg:mt-7">
             NKtechsolutions
           </h1>
         </div>
@@ -25,20 +25,20 @@ function Navbar() {
             Service
           </a>
           <a
-            href=""
+            href="#projects"
             className="hover:text-[#D4A017] transition-all duration-300"
           >
             Work
           </a>
           <a
-            href=""
+            href="#footer"
             className="hover:text-[#D4A017] transition-all duration-300"
           >
-            About
+            Contact
           </a>
         </div>
         <button
-  className="
+          className="
   hidden lg:flex
   items-center
   justify-center
@@ -61,11 +61,10 @@ function Navbar() {
   lg:text-lg
   font-medium
   "
->
-  Let's Talk
-
-  <BsArrowRight className="text-base" />
-</button>
+        >
+          Let's Talk
+          <BsArrowRight className="text-base" />
+        </button>
         <RxHamburgerMenu
           size={36}
           color="#D4A017"

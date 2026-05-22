@@ -38,6 +38,8 @@ function Services() {
 
   return (
     <>
+    <section id="services">
+
       <h2 className="lg:text-3xl text-2xl text-[#D4A017]  ml-16 mt-28 font-thin">
         OUR SERVICES
       </h2>
@@ -53,7 +55,7 @@ function Services() {
                 src={el.src}
                 alt="services"
                 className="w-[80%] md:w-[60%] lg:w-[80%]"
-              />{" "}
+                />{" "}
             </div>
             <h3 className="text-3xl m-2 text-[#D4A017]">{el.title}</h3>
             <p className="text-xl font-light m-2 mt-4 opacity-90 text-gray-400">
@@ -62,6 +64,7 @@ function Services() {
           </div>
         ))}
       </div>
+                </section>
     </>
   );
 }

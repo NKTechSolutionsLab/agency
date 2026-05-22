@@ -6,10 +6,10 @@ import { BsArrowRight } from "react-icons/bs";
 
 function Dropdown({ isOpen, setIsOpen }) {
   const navLinks = [
-    { name: "Home", href: "#home" },
+    { name: "Home", href: "#" },
     { name: "Services", href: "#services" },
-    { name: "About", href: "#about" },
-    { name: "Contact", href: "#contact" },
+    { name: "Work", href: "#projects" },
+    { name: "Contact", href: "#footer" },
   ];
 
   return (
@@ -46,10 +46,34 @@ function Dropdown({ isOpen, setIsOpen }) {
             ))}
           </div>
           <div className="w-80 h-[1.2px] ml-8 bg-gray-800 rounded-xl "></div>
-          <button className="flex items-center justify-between gap-5 bg-[#D4A017] text-black  pl-5 pr-12 py-3  ml-20 my-5 text-2xl rounded-xl">
-            Lets Talk
-            <BsArrowRight />
-          </button>
+          <button
+                    className="
+                      flex
+                      items-center
+                      justify-center
+                      gap-2
+                      w-[160px]
+                      h-[52px]
+                      mt-5
+                      border border-[#D4A017]
+                      bg-[#0A0A0A]
+                      text-[#D4A017]
+                      hover:bg-[#D4A017]
+                      hover:text-black
+                      hover:-translate-y-[2px]
+                      transition-all
+                      duration-300
+                      rounded-lg
+                      text-sm
+                      lg:text-xl
+                      font-medium
+                      lg:my-8
+                      pl-5 pr-12 py-3  ml-20 my-5
+                  "
+                  >
+                    Let's Talk
+                    <BsArrowRight className="text-base " />
+                  </button>
         </>
       ) : (
         <></>
