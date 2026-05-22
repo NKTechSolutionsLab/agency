@@ -9,6 +9,7 @@ import WhyChoose from './components/WhyChoose'
 import Pricing from './components/Pricing'
 import CTA from './components/CTA'
 import Footer from './components/Footer'
+import ContactForm from './components/ContactForm'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <WhyChoose />
       <Pricing />
       <CTA />
+      <ContactForm />
       <Footer />
     </main>
   )
