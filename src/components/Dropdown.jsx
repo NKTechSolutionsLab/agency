@@ -64,15 +64,15 @@ function Dropdown({ isOpen, setIsOpen }) {
                       transition-all
                       duration-300
                       rounded-lg
-                      text-sm
+                      text-lg
                       lg:text-xl
                       font-medium
                       lg:my-8
-                      pl-5 pr-12 py-3  ml-20 my-5
+                       py-3  ml-20 my-5
                   "
             >
               Let's Talk
-              <BsArrowRight className="text-base " />
+              <BsArrowRight className="text-lg " />
             </button>
           </a>{" "}
         </>
