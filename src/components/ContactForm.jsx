@@ -197,7 +197,17 @@ export default function ContactForm() {
           </button>
 
           {/* Result */}
-          <p className="text-gray-400">{result}</p>
+          <p
+            className={`text-sm transition-all duration-300 ${
+              result === "Sending..."
+                ? "text-gray-400"
+                : result === "Inquiry submitted successfully."
+                  ? "text-green-500"
+                  : "text-red-500"
+            }`}
+          >
+            {result}
+          </p>
         </form>
       </div>
     </section>
