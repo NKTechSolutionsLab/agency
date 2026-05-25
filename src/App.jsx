@@ -9,7 +9,7 @@ import WhyChoose from './components/WhyChoose'
 import Pricing from './components/Pricing'
 import CTA from './components/CTA'
 import Footer from './components/Footer'
-import ContactForm from './components/ContactForm'
+import InquiryForm from './components/InquiryForm'
 
 function App() {
   return (
@@ -24,7 +24,7 @@ function App() {
       <WhyChoose />
       <Pricing />
       <CTA />
-      <ContactForm />
+      <InquiryForm />
       <Footer />
     </main>
   )
