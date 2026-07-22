@@ -2,7 +2,7 @@ import React from "react";
 import brewty from "../img/brewtiful2.webp";
 import fashion from "../img/fashion2.webp";
 import shopex from "../img/shopping2.webp";
-import coach from "../img/coach.webp";
+import coach from "../img/choaching_site.png";
 import { BsArrowRight } from "react-icons/bs";
 function Projects() {
   const details = [
@@ -26,9 +26,10 @@ function Projects() {
       link: "https://shoppingex.netlify.app/",
     },
     {
-      title: "Coach Branding Platform",
+      title: "Coaching Site",
       src: coach,
       desc: "A coaching website focused on seamless interactions, clean design, and building stronger audience connection.",
+      link: "https://gateway-coaching.vercel.app/",
     },
   ];
   return (
@@ -88,14 +89,7 @@ function Projects() {
                      my-2
                      lg:my-8"
                       >
-                        {d.title == "Coach Branding Platform"
-                          ? "In Process..."
-                          : "Have a look"}
-                        {d.title == "Coach Branding Platform" ? (
-                          ""
-                        ) : (
-                          <BsArrowRight className="text-base " />
-                        )}
+                        {d.title}
                       </button>
                     </a>
                   </div>
